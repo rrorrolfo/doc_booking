@@ -26,7 +26,7 @@ class Filters extends Component {
 
     render () {
         return(
-            <div className="Filters">
+            <div className={ this.props.isLanding ? ("landing_filters") : ("Filters")}>
                 <h1>Book Appointment</h1>
 
                 <form onSubmit={ this.handleSubmit }>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Dashboard from "./components/Dashboard";
@@ -11,7 +12,8 @@ class App extends Component {
 
   state = {
     doctorResults: "",
-    noResults: true
+    noResults: true,
+    isMainPage: true
   }
 
   assignResults = speciality => {
@@ -19,23 +21,26 @@ class App extends Component {
 
     this.setState({
       doctorResults: results,
-      noResults: false
+      noResults: false,
+      isMainPage: false
     })
 
   }
 
   render() {
     return (
-      <div>
-        <Header />
-        <div id="content_wrapper">
-          <Nav />
-          <Filters displayResults={ this.assignResults }/>
-          <Dashboard />
-          <DoctorResults  results= { this.state.doctorResults } emptyResults={ this.state.noResults }/>
+      <BrowserRouter>
+        <div>
+          <Header />
+          <div id="content_wrapper">
+            <Nav />
+            <Filters displayResults={ this.assignResults } isLanding= { this.state.isMainPage }/>
+            <Dashboard />
+            <DoctorResults  results= { this.state.doctorResults } emptyResults={ this.state.noResults }/>
+          </div>
+          
         </div>
-        
-      </div>
+      </BrowserRouter>
     );
   }
 }

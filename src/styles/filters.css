@@ -37,3 +37,24 @@
     border: none;
     color: white;
 }
+
+.landing_filters {
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    z-index: 10000;
+    border: 1px solid red;
+    background-color: white;
+    text-align: center;
+}
+
+.landing_filters h1 {
+    margin-bottom: 100px;
+}
+
+.landing_filters .input_wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
