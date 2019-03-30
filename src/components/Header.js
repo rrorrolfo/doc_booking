@@ -5,9 +5,8 @@ import "../styles/header.css"
 const Header = () => {
     return(
         <header className="Header">
-            <div className="language">
-                <img src={flag} alt="language selection"/>
-            </div>
+                <img src={flag} className="logo" alt="language selection"/>
+                <img src={flag} className="language" alt="language selection"/>
         </header>
     )
 }
