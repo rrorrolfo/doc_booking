@@ -1,0 +1,33 @@
+{
+    "geriatrician": [
+        {
+            "name":"Martin Sanchez",
+            "location":"Ida-Tallinna Keskhaigla",
+            "languages": ["Estonian", "English", "Spanish"],
+            "available_times": ["14:00", "15:00", "16:00"],
+            "img": "../../assets/doc2.jpeg"
+        },
+        {
+            "name":"Thomas Dupin",
+            "location":"Põhja-Eesti Regionaalhaigla",
+            "languages": ["Estonian", "English"],
+            "available_times": ["10:00", "11:00", "12:00"],
+            "img": "../../assets/doc2.jpeg"
+        },
+        {
+            "name":"Marek Tamm",
+            "location":"Põhja-Eesti Regionaalhaigla",
+            "languages": ["Estonian", "English", "Russian"],
+            "available_times": ["18:00", "19:00", "20:00"],
+            "img": "../../assets/doc2.jpeg"
+        },
+        {
+            "name":"Sofia Tamm",
+            "location":"Ida-Tallinna Keskhaigla",
+            "languages": ["Estonian", "English", "Russian"],
+            "available_times": ["15:00", "16:00", "17:00"],
+            "img": "../../assets/doc2.jpeg"
+        }
+
+    ]
+}

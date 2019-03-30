@@ -2,15 +2,37 @@ import React, { Component } from "react";
 import "../styles/filters.css"
 
 class Filters extends Component {
+
+    state= {
+        especiality: ""
+    }
+
+    handleSubmit = event => {
+        event.preventDefault();
+
+        if ( this.state.especiality === "Geriatrics") {
+            this.props.displayResults("geriatrician");
+        } else if ( this.state.especiality === "Pediatrics") {
+            this.props.displayResults("pediatrician");
+        }
+        
+    }
+
+    handleChange = event => {
+        const { name, value } = event.target;
+        this.setState({ [name]: value });
+    }
+
+
     render () {
         return(
             <div className="Filters">
                 <h1>Book Appointment</h1>
 
-                <form>
+                <form onSubmit={ this.handleSubmit }>
                     
                     <div className="input_wrapper rounded">
-                        <select>
+                        <select onChange={ this.handleChange } name="especiality">
                             <option>-- Select speciality --</option>
                             <option>Cardiology</option>
                             <option>Dermatology</option>

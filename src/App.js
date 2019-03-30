@@ -8,15 +8,31 @@ import DoctorResults from "./components/results/DoctorResults";
 
 
 class App extends Component {
+
+  state = {
+    doctorResults: "",
+    noResults: true
+  }
+
+  assignResults = speciality => {
+    const results = require(`./data/${speciality}.json`)[`${speciality}`];
+
+    this.setState({
+      doctorResults: results,
+      noResults: false
+    })
+
+  }
+
   render() {
     return (
       <div>
         <Header />
         <div id="content_wrapper">
           <Nav />
-          <Filters />
+          <Filters displayResults={ this.assignResults }/>
           <Dashboard />
-          <DoctorResults />
+          <DoctorResults  results= { this.state.doctorResults } emptyResults={ this.state.noResults }/>
         </div>
         
       </div>

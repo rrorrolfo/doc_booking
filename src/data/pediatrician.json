@@ -1,0 +1,18 @@
+{
+    "pediatrician": [
+        {
+            "name":"Merike Moos",
+            "location":"Ida-Tallinna Keskhaigla",
+            "languages": ["Estonian", "English", "French"],
+            "available_times": ["12:30", "15:00", "16:30"]
+        },
+        {
+            "name":"Maria Privalova",
+            "location":"Lääne-Tallinna Keskhaigla",
+            "languages": ["Estonian", "Russian"],
+            "available_times": ["12:30", "13:00", "13:30", "16:30"]
+        }
+            
+    ]
+    
+}
