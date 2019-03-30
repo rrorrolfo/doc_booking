@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: ‘Lato’, sans-serif;
 }
 
 ul {
@@ -11,4 +12,5 @@ ul {
   display: grid;
   grid-template-columns: minmax(200px, 30vw) 1fr;
   grid-template-rows: 1fr 1fr; 
+  max-height: calc(100vh - 80px);
 }
