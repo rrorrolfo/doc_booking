@@ -25,6 +25,11 @@
     margin: 5px;
 }
 
+.available_time:hover,
+.selected {
+    background-color: #4CD964;
+}
+
 .book {
     height: 50px;
     font-size: 1.3rem;
