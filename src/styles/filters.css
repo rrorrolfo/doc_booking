@@ -1,0 +1,38 @@
+.Filters {
+    padding: 10px;
+}
+
+.Filters form{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid black;
+    padding-bottom: 25px;
+}
+
+.input_wrapper {
+    flex-basis: 25%;
+}
+
+.Filters select,
+.Filters input {
+    width: 100%;
+    padding: 5px;
+}
+
+.Filters input {
+    padding: 2.5px;
+}
+
+.rounded {
+    border-radius: 10px;
+    height: 25px;
+}
+
+.submit {
+    flex-basis: 15%;
+    height: 30px;
+    font-size: 1.1rem;
+    background-color: #3BB4C1;
+    border: none;
+    color: white;
+}

@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Dashboard from "./components/Dashboard";
+import Filters from "./components/Fiters";
 
 
 class App extends Component {
@@ -12,7 +13,7 @@ class App extends Component {
         <Header />
         <div id="content_wrapper">
           <Nav />
-          <div>Filters</div>
+          <Filters />
           <Dashboard />
 
         </div>
