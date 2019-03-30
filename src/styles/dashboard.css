@@ -1,5 +1,6 @@
 .Dashboard {
     padding-left: 30px;
+    padding-right: 30px;
 }
 
 .profile_photo {
@@ -70,11 +71,11 @@
   }
 
   input:checked + .slider {
-    background-color: #3BB4C1;
+    background-color: #4CD964;
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px #3BB4C1;
+    box-shadow: 0 0 1px #4CD964;
   }
   
   input:checked + .slider:before {
