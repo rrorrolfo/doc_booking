@@ -1,3 +1,14 @@
 * {
   box-sizing: border-box;
 }
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+#content_wrapper {
+  display: grid;
+  grid-template-columns: minmax(200px, 30vw) 1fr;
+  grid-template-rows: 1fr 1fr; 
+}

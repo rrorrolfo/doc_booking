@@ -1,0 +1,21 @@
+
+.Nav {
+    padding-left: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #000;
+}
+
+
+.Nav ul {
+    padding: 0;
+}
+
+.Nav li {
+    margin: 25px 0;
+}
+
+.nav_svg {
+    width: 30px;
+    height: 20px;
+    vertical-align: bottom;
+}
