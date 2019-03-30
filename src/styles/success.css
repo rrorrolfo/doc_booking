@@ -1,0 +1,10 @@
+.Success h1{
+    color: #4CD964;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.Success a {
+    text-decoration: none;
+    color: black;
+}

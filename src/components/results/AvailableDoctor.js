@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/availabledoctor.css";
+import { Link } from "react-router-dom";
 
 
 const AvailableDoctor = ({name, location, languages, times, image}) => {
@@ -35,7 +36,7 @@ const AvailableDoctor = ({name, location, languages, times, image}) => {
             </div>
 
             <div>
-                <button className="book">Book</button>
+                <button className="book"><Link to="/success">Book</Link></button>
             </div>
 
         </div>

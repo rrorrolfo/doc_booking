@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Dashboard from "./components/Dashboard";
@@ -28,6 +28,12 @@ class App extends Component {
 
   }
 
+  noLanding = () => {
+    this.setState({
+      isMainPage: false
+    })
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -38,7 +44,7 @@ class App extends Component {
             <Filters displayResults={ this.assignResults } isLanding= { this.state.isMainPage }/>
             <Dashboard />
             <Route exact path="/" render={ () => <DoctorResults  results= { this.state.doctorResults } emptyResults={ this.state.noResults } /> }/>
-            <Route path="/success" component={ Success }/>
+            <Route path="/success" render={ () => <Success noDefault={this.noLanding }/> }/>
           </div>
           
         </div>
