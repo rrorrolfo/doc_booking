@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Dashboard from "./components/Dashboard";
 import Filters from "./components/Fiters";
+import DoctorResults from "./components/results/DoctorResults";
 
 
 class App extends Component {
@@ -15,7 +16,7 @@ class App extends Component {
           <Nav />
           <Filters />
           <Dashboard />
-
+          <DoctorResults />
         </div>
         
       </div>

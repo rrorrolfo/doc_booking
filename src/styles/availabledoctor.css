@@ -1,0 +1,47 @@
+.available_doctor {
+    display: flex;
+    width: 85%;
+    padding: 15px;
+    margin: 0 auto 25px;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: 10px 5px 5px grey;
+}
+
+.doc_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.available_time {
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 75px;
+    text-align: center;
+    margin: 5px;
+}
+
+.book {
+    height: 50px;
+    font-size: 1.3rem;
+    background-color: #3BB4C1;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 45px;
+    font-weight: 700;
+}
+
+.img_container {
+    flex-basis: 20%;
+
+}
+
+.doctor_data,
+.availability {
+    flex-basis: 30%
+}
